@@ -1,7 +1,7 @@
 import './style.css';
 import QRCode from 'qrcode';
 
-QRCode.toDataURL('https://www.kinsfc.org', { width: 300, margin: 1 }).then((url) => {
+QRCode.toDataURL('https://bradleyjamesm.github.io/kinsfc/', { width: 300, margin: 1 }).then((url) => {
   const img = document.querySelector('#flyer-qr');
   if (img) img.src = url;
 });
