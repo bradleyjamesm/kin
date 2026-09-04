@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIN Club Flyer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Space Grotesk', sans-serif;
+        background: #e8e3d8;
+        color: #20201f;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+      .flyer {
+        width: 100%;
+        max-width: 620px;
+        background: #fff8e8;
+        border: 3px solid #20201f;
+        border-radius: 24px;
+        padding: 2.25rem 2rem;
+        box-shadow: 8px 8px 0 #20201f;
+        text-align: center;
+      }
+      .flyer-logo {
+        font-family: 'Staatliches', sans-serif;
+        font-size: 4.5rem;
+        letter-spacing: 0.06em;
+        line-height: 1;
+        margin: 0;
+      }
+      .flyer-logo span {
+        color: #ff5ec8;
+      }
+      .flyer-logo span:nth-child(2) {
+        color: #2ec4b6;
+      }
+      .flyer-sub {
+        margin: 0.4rem 0 1rem;
+        font-family: 'Staatliches', sans-serif;
+        font-size: 1.6rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+      .flyer-tagline {
+        margin: 0 0 1.5rem;
+        font-weight: 600;
+      }
+      .flyer-info {
+        display: grid;
+        gap: 0.6rem;
+        text-align: left;
+        margin: 0 0 1.5rem;
+        font-size: 1.05rem;
+      }
+      .flyer-info div {
+        background: #fff;
+        border: 2px solid #20201f;
+        border-radius: 14px;
+        padding: 0.7rem 1rem;
+        box-shadow: 3px 3px 0 #20201f;
+      }
+      .flyer-info b {
+        color: #e63946;
+      }
+      .flyer-donate {
+        margin: 0 0 1.5rem;
+        font-weight: 600;
+      }
+      .flyer-donate span {
+        font-family: 'Staatliches', sans-serif;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #9b5de5;
+        font-size: 1.3rem;
+      }
+      .flyer-qr {
+        border-top: 2px dashed #20201f;
+        padding-top: 1.25rem;
+      }
+      .flyer-qr p {
+        margin: 0 0 0.75rem;
+        font-weight: 700;
+      }
+      .flyer-qr img {
+        width: 150px;
+        height: 150px;
+        image-rendering: pixelated;
+      }
+      .flyer-credit {
+        margin: 1.25rem 0 0;
+        font-size: 0.85rem;
+        color: #6b6b6b;
+      }
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .flyer {
+          box-shadow: none;
+          border-radius: 0;
+          max-width: none;
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flyer">
+      <h1 class="flyer-logo"><span>K</span><span>I</span><span>N</span></h1>
+      <p class="flyer-sub">Kids In Need</p>
+      <p class="flyer-tagline">Small crew. Big heart. Real impact.</p>
+
+      <div class="flyer-info">
+        <div>📌 Meetings at <b>lunch</b></div>
+        <div>📍 <b>Room 6205</b> or <b>Mr. Kaleta's room</b></div>
+        <div>🤝 Come help kids in need!</div>
+      </div>
+
+      <p class="flyer-donate">
+        We donate to <span>Olive Crest</span> — school supplies, warm clothes, toys &amp; books.
+      </p>
+
+      <div class="flyer-qr">
+        <p>Scan to visit us</p>
+        <img id="qr" alt="KIN QR code" />
+      </div>
+
+      <p class="flyer-credit">KIN · Kids In Need · Made by middle-schoolers</p>
+    </main>
+
+    <script type="module">
+      import QRCode from 'qrcode';
+      QRCode.toDataURL('https://bradleyjamesm.github.io/kin/', { width: 300, margin: 1 }).then((url) => {
+        document.querySelector('#qr').src = url;
+      });
+    </script>
+  </body>
+</html>

@@ -18,10 +18,12 @@
     <nav class="nav">
       <a class="nav-logo" href="#top">KIN</a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#club">Club</a>
-        <a href="#donate">Donate</a>
-        <a href="#creators">Creators</a>
+        <a href="#about" data-i18n="nav-about">About</a>
+        <a href="#club" data-i18n="nav-club">Club</a>
+        <a href="#donate" data-i18n="nav-donate">Donate</a>
+        <a href="#creators" data-i18n="nav-creators">Creators</a>
+        <a href="flyer.html">Flyer</a>
+        <button id="lang-toggle" class="lang-toggle">ES</button>
       </div>
     </nav>
 
@@ -51,11 +53,11 @@
         <circle cx="56" cy="150" r="3" fill="#b6f75e" opacity="0.5" />
         <circle cx="150" cy="34" r="3" fill="#b6f75e" opacity="0.5" />
       </svg>
-      <p class="hero-eyebrow">a middle-school club</p>
+      <p class="hero-eyebrow" data-i18n="hero-eyebrow">a middle-school club</p>
       <h1 class="hero-title">KIN</h1>
       <p class="hero-subtitle">Kids In Need</p>
-      <p class="hero-tagline">Small crew. Big heart. Real impact.</p>
-      <a class="btn-arcade" href="#donate">See what we do</a>
+      <p class="hero-tagline" data-i18n="hero-tagline">Small crew. Big heart. Real impact.</p>
+      <a class="btn-arcade" href="#donate" data-i18n="hero-btn">See what we do</a>
       <div class="hero-scanlines" aria-hidden="true"></div>
     </header>
 
@@ -63,20 +65,20 @@
       <section id="about" class="section section-about">
         <div class="wrap">
           <h2 class="section-title">
-            <span class="title-tag">About</span>
-            <span class="title-text">Who we are</span>
+            <span class="title-tag" data-i18n="about-tag">About</span>
+            <span class="title-text" data-i18n="about-title">Who we are</span>
           </h2>
           <div class="about-grid">
-            <p class="about-copy">
+            <p class="about-copy" data-i18n-html="about-copy">
               <strong>KIN</strong> — <strong>Kids In Need</strong> — is a student club that levels up
               our community. We run donation drives, collect school supplies, and host small
               fundraisers all year. Simple idea, big payoff: a little support changes everything.
             </p>
             <ul class="mission-list">
-              <li><span class="dot dot-pink"></span>Help kids in our community</li>
-              <li><span class="dot dot-green"></span>Collect school supplies</li>
-              <li><span class="dot dot-blue"></span>Host clothing drives</li>
-              <li><span class="dot dot-orange"></span>Run small fundraisers</li>
+              <li data-i18n="about-m1"><span class="dot dot-pink"></span>Help kids in our community</li>
+              <li data-i18n="about-m2"><span class="dot dot-green"></span>Collect school supplies</li>
+              <li data-i18n="about-m3"><span class="dot dot-blue"></span>Host clothing drives</li>
+              <li data-i18n="about-m4"><span class="dot dot-orange"></span>Run small fundraisers</li>
             </ul>
           </div>
         </div>
@@ -85,18 +87,18 @@
       <section id="club" class="section section-club">
         <div class="wrap">
           <h2 class="section-title">
-            <span class="title-tag">SFC Club</span>
-            <span class="title-text">Find us</span>
+            <span class="title-tag" data-i18n="club-tag">SFC Club</span>
+            <span class="title-text" data-i18n="club-title">Find us</span>
           </h2>
           <div class="club-card">
-            <p class="club-line">
+            <p class="club-line" data-i18n-html="club-line">
               Come to our club in <span class="highlight highlight-pink">room 6205</span> or
               <span class="highlight highlight-green">Mr. Kaleta's room</span> to help kids in need.
             </p>
             <div class="club-tags">
-              <span class="tag">Meetings at lunch</span>
-              <span class="tag">All students welcome</span>
-              <span class="tag">Bring your ideas</span>
+              <span class="tag" data-i18n="club-t1">Meetings at lunch</span>
+              <span class="tag" data-i18n="club-t2">All students welcome</span>
+              <span class="tag" data-i18n="club-t3">Bring your ideas</span>
             </div>
           </div>
         </div>
@@ -105,26 +107,26 @@
       <section id="donate" class="section section-donate">
         <div class="wrap">
           <h2 class="section-title">
-            <span class="title-tag">Where We Donate</span>
-            <span class="title-text">How your help lands</span>
+            <span class="title-tag" data-i18n="donate-tag">Where We Donate</span>
+            <span class="title-text" data-i18n="donate-title">How your help lands</span>
           </h2>
-          <p class="donate-note">We donate to Olive Crest.</p>
-          <p class="donate-intro">Your donations go straight to local kids who need them most:</p>
+          <p class="donate-note" data-i18n="donate-note">We donate to Olive Crest.</p>
+          <p class="donate-intro" data-i18n="donate-intro">Your donations go straight to local kids who need them most:</p>
           <div class="donation-cards">
             <article class="donation-card card-pink">
               <div class="card-icon">🎒</div>
-              <h3>School Supplies</h3>
-              <p>Backpacks, notebooks, and pencils so every student starts the year prepared.</p>
+              <h3 data-i18n="donate-c1-title">School Supplies</h3>
+              <p data-i18n="donate-c1-body">Backpacks, notebooks, and pencils so every student starts the year prepared.</p>
             </article>
             <article class="donation-card card-green">
               <div class="card-icon">🧥</div>
-              <h3>Warm Clothes</h3>
-              <p>Coats, socks, and winter gear to keep kids warm through the season.</p>
+              <h3 data-i18n="donate-c2-title">Warm Clothes</h3>
+              <p data-i18n="donate-c2-body">Coats, socks, and winter gear to keep kids warm through the season.</p>
             </article>
             <article class="donation-card card-blue">
               <div class="card-icon">🧸</div>
-              <h3>Toys &amp; Books</h3>
-              <p>New or gently-used toys and books to bring a little joy and imagination.</p>
+              <h3 data-i18n="donate-c3-title">Toys &amp; Books</h3>
+              <p data-i18n="donate-c3-body">New or gently-used toys and books to bring a little joy and imagination.</p>
             </article>
           </div>
         </div>
@@ -132,14 +134,18 @@
     </main>
 
     <footer id="creators" class="footer">
-      <p>KIN · Kids In Need</p>
-      <p class="credits-title">Created by</p>
+      <div class="qr-block">
+        <p>Scan for our flyer</p>
+        <img id="flyer-qr" alt="QR code to the flyer" />
+      </div>
+      <p data-i18n="footer-name">KIN · Kids In Need</p>
+      <p class="credits-title" data-i18n="credits-title">Created by</p>
       <ul class="credits">
-        <li>Owen Rapkin — C.E.O</li>
-        <li>Easton Burns — Senior C.E.O</li>
-        <li>Jack Borton — Vice C.E.O</li>
-        <li>Bradley Miller — C.T.O</li>
-        <li>Charlie Wallace — Helper</li>
+        <li data-i18n="credits-1">Owen Rapkin — C.E.O</li>
+        <li data-i18n="credits-2">Easton Burns — Senior C.E.O</li>
+        <li data-i18n="credits-3">Jack Borton — Vice C.E.O</li>
+        <li data-i18n="credits-4">Bradley Miller — C.T.O</li>
+        <li data-i18n="credits-5">Charlie Wallace — Helper</li>
       </ul>
     </footer>
 
